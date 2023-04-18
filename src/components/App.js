@@ -2,6 +2,7 @@ import { Container } from "react-bootstrap";
 import Signup from "./Signup";
 import Dashboard from "./Dashboard";
 import Login from "./Login";
+import ForgotPassword from "./ForgotPassword";
 import { AuthProvider } from "../contexts/AuthContext";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -19,6 +20,7 @@ function App() {
                 <Route exact path="/" Component={Dashboard} />
                 <Route path="/signup" Component={Signup} />
                 <Route path="/login" Component={Login} />
+                <Route path="/forgot-password" Component={ForgotPassword} />
               </Routes>
             </AuthProvider>
           </Router>
